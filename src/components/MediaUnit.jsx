@@ -72,7 +72,7 @@ export default function MediaUnit({ mediaFile, mediaService, onDelete }) {
         if (mediaFile.isAudio()) {
             return (
                 <div>
-                    <img alt="Audio File" className='audio-img' src='../public/audio.svg' />
+                    <img alt="Audio File" className='audio-img' src='/audio.svg' />
                     <audio
                         className='media-audio'
                         src={url}

@@ -1,0 +1,45 @@
+@import url('constants.css');
+.text-container {
+    background-color: var(--section-background);
+    border-radius: 40px;
+    width: var(--section-width);
+    padding: 20px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    min-height:var(--section-min-height);
+    display: flex;
+    flex-direction: column;
+    overflow: hidden;
+    & h3{
+        margin:0;
+    }       
+    & .diary-textarea {
+        width: 100%;
+        background: transparent;
+        margin:0;
+        margin-top:20px;
+        margin-bottom:20px;
+        height: 100%;
+        border: none;
+        resize: none;
+        outline: none;
+        flex:1;
+        font-family: sans-serif;
+        font-size: var(--text-size);
+        color: #000;
+    }
+}
+    
+
+@media (max-width: 1000px) {
+    .text-container {
+        padding: 20px;
+        border-radius: 30px;
+    }
+}
+
+@media (max-width: 480px) {
+    .text-container {
+        padding: 15px;
+        border-radius: 20px;
+    }
+}

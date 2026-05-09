@@ -1,0 +1,61 @@
+@import url('constants.css');
+.media-container {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    padding: 20px 30px;
+    box-shadow: 0 4px 10px rgba(0, 0, 0, 0.05);
+    border-radius: 40px;
+    background-color: var(--section-background);
+    width: var(--section-width); 
+    min-height:var(--section-min-height);
+    overflow: hidden;
+    & h3{
+        margin:0;
+    }          
+    & .media-grid {
+        display: grid;
+        padding-right: 5px;
+        flex:1;
+        gap:16px;
+        grid-template-columns: repeat(auto-fill, minmax(180px, 1fr));
+        align-items: start;
+        align-content: start;
+
+        overflow-y: auto;
+    }
+    & .drag-and-drop{
+        color:#666666;
+        font-weight:400;
+        & input{
+            display:none;
+        }
+    }
+}
+
+@media (max-width: 1000px) {
+    .media-container {
+        padding: 20px;
+        border-radius: 30px;
+
+        & .media-grid {
+            gap: 12px;
+        }
+    }
+}
+
+@media (max-width: 480px) {
+    .media-container {
+        padding: 15px;
+        border-radius: 20px;
+        gap: 15px;
+
+        & .media-grid {
+            grid-template-columns: repeat(auto-fill, minmax(140px, 1fr));
+            gap: 10px;
+            padding-right:0;
+        }
+    }
+}
+
+

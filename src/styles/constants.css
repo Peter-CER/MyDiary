@@ -1,0 +1,22 @@
+:root {
+    --app-background: #f4f4f4;
+    --section-background: white;
+    --text-color: #444444;
+    --section-width:30%;
+    --section-min-height: 60vh;
+    --media-height: 160px;
+    --text-size:1.1rem;
+}
+
+@media (max-width: 1000px) {
+    :root {
+        --section-width: 70%;
+        --text-size:1rem;
+    }
+}
+@media (max-width: 480px) {
+    :root {
+        --section-width: 90%;
+    }
+}
+

@@ -1,0 +1,24 @@
+app-timeline{
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
+    width:40%;
+    margin: 0 auto;
+    & .node-box {
+        width: clamp(20px, 10vw, 55px);
+        height: auto;
+    }
+}
+@media (max-width: 1200px) {
+    app-timeline {
+        width: 60%;
+    }
+}
+
+
+@media (max-width: 800px) {
+    app-timeline {
+        width: var(--section-width);
+    }
+}
+
